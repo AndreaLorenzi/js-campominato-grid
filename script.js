@@ -2,8 +2,11 @@
 const eleGrid = document.querySelector('.grid');
 const eleBtnPlay = document.querySelector('#btn-play');
 let clickedOnce = false;
-// creare la funzione del bottone 
-eleBtnPlay.addEventListener('click',
+
+
+document.querySelector('.form-select').addEventListener('click',
+    function(){
+      eleBtnPlay.addEventListener('click',
 	function() {
         // aggiunto reload al tasto button
         if (!clickedOnce) {
@@ -34,3 +37,7 @@ eleBtnPlay.addEventListener('click',
         }
     }
 )
+  
+    }
+)
+    
