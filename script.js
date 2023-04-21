@@ -5,13 +5,14 @@ let clickedOnce = false;
 // creare la funzione del bottone 
 eleBtnPlay.addEventListener('click',
 	function() {
-        // generare la griglia
-        createGrid(100, eleGrid);
+        // aggiunto reload al tasto button
         if (!clickedOnce) {
             clickedOnce = true;
           } else {
             location.reload();
           }
+        // generare la griglia
+        createGrid(100, eleGrid);
         // applicare gli event listeners a tutte le celle della griglia
         const listCells = document.querySelectorAll('.cell');
         for (let i = 0; i < listCells.length; i++) {
