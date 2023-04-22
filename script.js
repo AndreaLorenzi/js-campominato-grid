@@ -1,20 +1,16 @@
 // selezionare gli elementi del DOM necessari
 const eleGrid = document.querySelector('.grid');
 const eleBtnPlay = document.querySelector('#btn-play');
-let clickedOnce = false;
+const eleDifficult = document.getElementById("difficult");
 
 
-document.querySelector('.form-select').addEventListener('click',
-    function(){
+
+
       eleBtnPlay.addEventListener('click',
 	function() {
-        // aggiunto reload al tasto button
-        if (!clickedOnce) {
-            clickedOnce = true;
-          } else {
-            location.reload();
-          }
-        // generare la griglia
+
+        // generare la griglia a seconda della selezione del livello di difficoltà
+        
         createGrid(100, eleGrid);
         // applicare gli event listeners a tutte le celle della griglia
         const listCells = document.querySelectorAll('.cell');
@@ -37,7 +33,3 @@ document.querySelector('.form-select').addEventListener('click',
         }
     }
 )
-  
-    }
-)
-    
