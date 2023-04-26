@@ -10,16 +10,16 @@ eleButton.addEventListener("click", function () {
     
     // generare la griglia in base alla difficoltà scelta
     if (value == "100") {
-        eleGrid.classList.remove("grid_easy", "grid_medium", "grid_hard");
-        eleGrid.classList.add("grid_easy");
+        eleGrid.classList.remove("easy", "medium", "hard");
+        eleGrid.classList.add("easy");
         createGrid(100, eleGrid);
     } else if (value == "81") {
-        eleGrid.classList.remove("grid_easy", "grid_medium", "grid_hard");
-        eleGrid.classList.add( "grid_medium");
+        eleGrid.classList.remove("easy", "medium", "hard");
+        eleGrid.classList.add( "medium");
         createGrid(81, eleGrid);
     } else if (value == "49") {
-        eleGrid.classList.remove("grid_easy", "grid_medium", "grid_hard");
-        eleGrid.classList.add("grid_hard");
+        eleGrid.classList.remove("easy", "medium", "hard");
+        eleGrid.classList.add("hard");
         createGrid(49, eleGrid);
     }
 

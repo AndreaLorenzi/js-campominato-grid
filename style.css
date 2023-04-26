@@ -65,17 +65,17 @@ p{
     margin: 10px;
 }
 
-.grid_easy{
+.easy{
     height: 600px;
     width: 600px;
 }
 
-.grid_medium {
+.medium {
     width: 540px;
     height: 540px;
 }
 
-.grid_hard {
+.hard {
     width: 420px;
     height: 420px;
 }
