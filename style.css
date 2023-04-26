@@ -33,16 +33,16 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(4, 255, 196);
+	background-color: rgb(16, 16, 16);
 }
 .grid {
+    width: 600px;
+    height: 600px;
 	display: flex;
 	flex-wrap: wrap;
-    height: 600px;
-    width: 600px;
     padding: 4rem;
     margin: auto;
-	background-color: rgb(4, 255, 196);
+	background-color: rgba(4, 255, 196, .5);
 	box-sizing: content-box;
 }
 
@@ -63,4 +63,19 @@ main {
 p{
     font-size: 20px;
     margin: 10px;
+}
+
+.grid_easy{
+    height: 600px;
+    width: 600px;
+}
+
+.grid_medium {
+    width: 540px;
+    height: 540px;
+}
+
+.grid_hard {
+    width: 420px;
+    height: 420px;
 }
